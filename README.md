@@ -3,8 +3,9 @@
 [![.](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![.](https://img.shields.io/badge/first--timers--only-friendly-blue.svg?style=flat-square)](https://www.firsttimersonly.com/)
 
-#### [🌐 Open fossurl.ml](https://fossurl.ml)
+#### Fork of 🌐 fossurl.ml
 
+The description below is the original description of fossurl.ml.
 
 ### What is Fossurl
 

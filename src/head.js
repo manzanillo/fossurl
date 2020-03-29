@@ -1,28 +1,28 @@
-var endpoint = "https://jsonbox.io/box_f4a3d05ef8fe374ac8ea";
+var endpoint = "https://jsonbox.io/box_3daf48485b180ea95afa"
 
 function fetchJSON(a) {
-    var f = new XMLHttpRequest;
-    f.open("GET", a, false);
-    f.send(null);
+    var f = new XMLHttpRequest
+    f.open("GET", a, false)
+    f.send(null)
     return f.responseText
 }
 
 function isURL(a) {
     let url = a
     if (!a.startsWith("javascript:")) {
-        return true;
+        return true
     } else {
-        return false;
+        return false
     }
 }
-var hashh = window.location.hash.substr(1);
+var hashh = window.location.hash.substr(1)
 if (window.location.hash != "") {
-    var res = JSON.parse(fetchJSON(endpoint + "/?q=s:" + hashh))[0];
-    var data = res["l"];
-    console.log(data);
+    var res = JSON.parse(fetchJSON(endpoint + "/?q=s:" + hashh))[0]
+    var data = res["l"]
+    console.log(data)
     if (data != null) {
         if (isURL(data)) {
-            window.location.href = data;
+            window.location.href = data
         }
     }
 }
